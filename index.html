@@ -49,7 +49,7 @@
         </div>
     </header>
     <main>
-        <section class="solution">
+        <section class="solution overlay">
             <div class="container">
                 <h1 class="main-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
                 <button type="button" class="button">Заказать услугу</button>
@@ -62,7 +62,7 @@
                 <ul class="features">
                     <li class="features-item">
                         <div class="features-icon">
-                        <svg class="icon-item" width='70' height='70'>
+                        <svg class="icon-item-do" width='70' height='70'>
                             <use href="./images/icons.svg#antenna"></use>
                         </svg>
                     </div>
@@ -72,7 +72,7 @@
                     </li>
                     <li class="features-item">
                         <div class="features-icon">
-                            <svg class="icon-item" width='70' height='70'>
+                            <svg class="icon-item-do" width='70' height='70'>
                                 <use href="./images/icons.svg#clock"></use>
                             </svg>
                         </div>
@@ -82,8 +82,8 @@
                     </li>
                     <li class="features-item">
                         <div class="features-icon">
-                            <svg class="icon-item" width='70' height='70'>
-                                <use href="./images/icons.svg#Vector"></use>
+                            <svg class="icon-item-do" width='70' height='70'>
+                                <use href="./images/icons.svg#diagram"></use>
                             </svg>
                         </div>
                         <h3 class="features-title">Планирование</h3>
@@ -92,7 +92,7 @@
                     </li>
                     <li class="features-item">
                         <div class="features-icon">
-                            <svg class="icon-item" width='70' height='70'>
+                            <svg class="icon-item-do" width='70' height='70'>
                                 <use href="./images/icons.svg#astronaut"></use>
                             </svg>
                         </div>
@@ -208,45 +208,49 @@
                     </li>
                 </ul>
             </div>
-            <div class="container">
-                <h2 class="clients">Постоянные клиенты</h2>
-                  <ul class="clients-list">
-                    <li class="clients-item"><a href="#" class="clients-link"></a>
-                        <svg class="clients-icon" width='106' height='60'>
-                            <use href="./images/icons.svg#LogoYa"></use>
-                        </svg>
-                    </li>
-                    <li class="clients-item"><a href="#" class="clients-link"></a>
-                        <svg class="clients-icon" width='106' height='60'>
-                            <use href="./images/icons.svg#LogoCompany1"></use>
-                        </svg>
-                    </li>
-                    <li class="clients-item"><a href="#" class="clients-link"></a>
-                        <svg class="clients-icon" width='106' height='60'>
-                            <use href="./images/icons.svg#LogoCompany2"></use>
-                        </svg>
-                    </li>
-                    <li class="clients-item"><a href="#" class="clients-link"></a>
-                        <svg class="clients-icon" width='106' height='60'>
-                            <use href="./images/icons.svg#LogoFoster"></use>
-                        </svg>
-                    </li>
-                    <li class="clients-item"><a href="#" class="clients-link"></a>
-                        <svg class="clients-icon" width='106' height='60'>
-                            <use href="./images/icons.svg#LogoBrand"></use>
-                        </svg>
-                    </li>
-                    <li class="clients-item"><a href="#" class="clients-link"></a>
-                        <svg class="clients-icon" width='106' height='60'>
-                            <use href="./images/icons.svg#LogoTagLine"></use>
-                        </svg>
-                    </li>
-                </ul>
-            </div>
+            
+        </section>
+        <section>
+        <div class="container">
+            <h2 class="clients">Постоянные клиенты</h2>
+            <ul class="clients-list">
+                <li class="clients-item"><a href="#" class="clients-link"><svg class="clients-icon" width='106' height='60'>
+                    <use href="./images/icons.svg#LogoYa"></use>
+                </svg></a>
+                    
+                </li>
+                <li class="clients-item"><a href="#" class="clients-link"><svg class="clients-icon" width='106' height='60'>
+                    <use href="./images/icons.svg#LogoCompany1"></use>
+                </svg></a>
+                    
+                </li>
+                <li class="clients-item"><a href="#" class="clients-link"><svg class="clients-icon" width='106' height='60'>
+                    <use href="./images/icons.svg#LogoCompany2"></use>
+                </svg></a>
+                    
+                </li>
+                <li class="clients-item"><a href="#" class="clients-link"><svg class="clients-icon" width='106' height='60'>
+                    <use href="./images/icons.svg#LogoFoster"></use>
+                </svg></a>
+                    
+                </li>
+                <li class="clients-item"><a href="#" class="clients-link"><svg class="clients-icon" width='106' height='60'>
+                    <use href="./images/icons.svg#LogoBrand"></use>
+                </svg></a>
+                    
+                </li>
+                <li class="clients-item"><a href="#" class="clients-link"><svg class="clients-icon" width='106' height='60'>
+                    <use href="./images/icons.svg#LogoTagLine"></use>
+                </svg></a>
+                    
+                </li>
+            </ul>
+        </div>
         </section>
     </main>
     <footer class="footer">
         <div class="container-footer container">
+            <div class="footer-address">
             <a href="" class="web-footer"><span class="web-color">Web</span>Studio</a>
             <address>
                 <ul class="list-footer">
@@ -254,25 +258,26 @@
                     <li class="list-footer-item"><a href="mailto:info@example.com" class="contact-link-footer">info@example.com</a></li>
                     <li class="list-footer-item"><a href="tel:+380991111111" class="contact-link-footer">+38 099 111 11 11</a></li>
                 </ul>
-                
-                    <ul class="footer-link">
-
-                        <h2 class="footer-title">ПРИСОЕДИНЯЙТЕСЬ</h2>                    
-                        <li class="social-item"><a href="#" class="social-link"><svg class="team-icon-item" width='20' height='20'>
-                                    <use href="./images/icons.svg#instagram"></use>
-                                </svg></a></li>
-                        <li class="social-item"><a href="#" class="social-link"><svg class="team-icon-item" width='20' height='20'>
-                                    <use href="./images/icons.svg#twitter"></use>
-                                </svg></a></li>
-                        <li class="social-item"><a href="#" class="social-link"><svg class="team-icon-item" width='20' height='20'>
-                                    <use href="./images/icons.svg#facebook"></use>
-                                </svg></a></li>
-                        <li class="social-item"><a href="#" class="social-link"><svg class="team-icon-item" width='20' height='20'>
-                                    <use href="./images/icons.svg#linkedin"></use>
-                                </svg></a></li>
-                    </ul>
-                
             </address>
+            </div>
+            <div class="footer-social">
+            <p class="footer-title">ПРИСОЕДИНЯЙТЕСЬ</p>
+            <ul class="footer-link">
+                          
+                <li class="social-item"><a href="#" class="social-link footer-icon"><svg class="team-icon-item" width='20' height='20'>
+                            <use href="./images/icons.svg#instagram"></use>
+                        </svg></a></li>
+                <li class="social-item"><a href="#" class="social-link  footer-icon"><svg class="team-icon-item" width='20' height='20'>
+                            <use href="./images/icons.svg#twitter"></use>
+                        </svg></a></li>
+                <li class="social-item"><a href="#" class="social-link  footer-icon"><svg class="team-icon-item" width='20' height='20'>
+                            <use href="./images/icons.svg#facebook"></use>
+                        </svg></a></li>
+                <li class="social-item"><a href="#" class="social-link  footer-icon"><svg class="team-icon-item" width='20' height='20'>
+                            <use href="./images/icons.svg#linkedin"></use>
+                        </svg></a></li>
+            </ul>
+            </div>
         </div>
     </footer>
 </body>
