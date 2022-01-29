@@ -23,9 +23,7 @@ body {
   padding-left: 15px;
   margin: 0 auto;
 }
-:current(a) {
-  background: var(--text-nav);
-}
+
 .web-header {
   font-family: var(--secondary-font);
   color: var(--text-web-header);
@@ -427,15 +425,13 @@ img {
   border-radius: 50%;
 }
 .social-link:hover,
-:focus {
+.social-link:focus {
   background-color: var(--text-nav);
 }
-.social-link:hover,
-.team-icon-item:hover,
-.social-link:focus,
-.team-icon-item:focus {
+.social-link:hover .team-icon-item:hover {
   fill: #fff;
 }
+
 .team-item {
   width: 270px;
   height: 428px;
