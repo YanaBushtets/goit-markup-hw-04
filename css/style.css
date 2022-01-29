@@ -428,7 +428,8 @@ img {
 .social-link:focus {
   background-color: var(--text-nav);
 }
-.social-link:hover .team-icon-item:hover {
+.social-link:hover .team-icon-item,
+.social-link:focus .team-icon-item {
   fill: #fff;
 }
 
@@ -466,8 +467,8 @@ img {
 .clients-item {
   width: 170px;
   height: 92px;
-  border: 1px solid transparent;
-  border-color: #afb1b8;
+  /* border: 1px solid transparent;
+  border-color: #afb1b8; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -480,15 +481,32 @@ img {
   fill: #afb1b8;
   cursor: pointer;
 }
-
-.clients-icon:hover,
-:focus {
-  fill: var(--text-nav);
+.clients-link {
+  border: 1px solid transparent;
+  border-color: #afb1b8;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.clients-item:hover {
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--text-nav);
+}
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  fill: #2196f3;
+}
+.clients-item:hover .clients-icon,
+.clients-item:focus .clients-icon {
+  fill: #2196f3;
+}
+/* .clients-item:hover,
+.clients-item:focus {
   border-color: #2196f3;
-}
-.footer-link {
+} */
+.clients-item .footer-link {
   display: flex;
   margin-top: 20px;
 }
